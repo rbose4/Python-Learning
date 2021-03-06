@@ -1,43 +1,43 @@
 # Chapter 4 - Loops
 
 # # Average of numbers given numbers
-# done = False
-# count = 0
-# average = 0.0
-# total = 0.0
-# while not done:
-#     inputstr = input("Enter a number or enter -1 to exit")
-#     if len(inputstr) == 0:
-#         print("Enter a number")
-#         continue
-#     elif inputstr == "-1":
-#         done = True
-#     else:
-#         try:
-#             total = total + float(inputstr)
-#             count += 1
-#         except:
-#             print("The value entered is not valid", inputstr)
-# if count > 0:
-#     average = total/count
-# else:
-#     average = 0.0
-# print("Average of %d numbers is %f" %(count, average))
+done = False
+count = 0
+average = 0.0
+total = 0.0
+while not done:
+     inputstr = input("Enter a number or enter -1 to exit")
+     if len(inputstr) == 0:
+         print("Enter a number")
+         continue
+     elif inputstr == "-1":
+         done = True
+     else:
+         try:
+             total = total + float(inputstr)
+             count += 1
+         except:
+             print("The value entered is not valid", inputstr)
+ if count > 0:
+     average = total/count
+ else:
+     average = 0.0
+ print("Average of %d numbers is %f" %(count, average))
 
 # # Sum of n numbers
-# total = 0.0
-# count = 0
-# inputstr = input("Enter a number. Press space to exit")
-# while not inputstr.isspace():
-#     try:
-#         number = float(inputstr)
-#         total = total + number
-#         count += 1
-#     except:
-#         print("Invalid number", inputstr)
-#         exit()
-#     inputstr = input("Enter a number")
-# print("Sum of %d numbers is %f" % (count, total))
+ total = 0.0
+ count = 0
+ inputstr = input("Enter a number. Press space to exit")
+ while not inputstr.isspace():
+     try:
+         number = float(inputstr)
+         total = total + number
+         count += 1
+     except:
+         print("Invalid number", inputstr)
+         exit()
+     inputstr = input("Enter a number")
+ print("Sum of %d numbers is %f" % (count, total))
 
 # # Count the number of negative values
 # negatives = 0
